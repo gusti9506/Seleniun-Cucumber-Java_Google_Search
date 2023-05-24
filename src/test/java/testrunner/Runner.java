@@ -11,7 +11,7 @@ import pages.BasePage;
         features = "src/test/resources/features/",
         plugin = {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
                 //"me.jvt.cucumber.report.PrettyReports:target/Cucumber-Reportes[HTML]",
-                //"json:target/[HTML]Reports-Cucumber.html"
+                "json:target/Reports-Cucumber.json"
                 },
         monochrome = true,
         glue = "steps",

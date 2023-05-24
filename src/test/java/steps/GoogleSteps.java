@@ -6,6 +6,8 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import pages.GooglePage;
 
+import static org.testng.Assert.assertEquals;
+
 public class GoogleSteps {
     private String textToSearch = "qa automation";
     GooglePage google = new GooglePage();
@@ -27,8 +29,12 @@ public class GoogleSteps {
 
     @Then("^It should show the related search$")
     public void deberia_mostrarme_la_busqueda_relacionada() {
-        google.mostrarResultados();
-
+        try {
+            assertEquals("qa automation", google.validateresults());
+            System.out.println("******* Test Aprobado!!! ******");
+        }catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }
 

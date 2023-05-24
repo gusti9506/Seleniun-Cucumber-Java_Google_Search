@@ -11,8 +11,8 @@ import utilities.CapturaEvidencia;
 import java.io.IOException;
 
 public class Hooks extends BasePage {
-    String nombreDocumento = "XReports_Evidence\\Evidence[IMG]\\Evidence.docx";
-    String dirEvidencias = "XReports_Evidence\\Evidence[IMG]\\";
+    String nombreDocumento = "XReports_Evidence\\EvidenceTest[IMG]\\Evidence.docx";
+    String dirEvidencias = "XReports_Evidence\\EvidenceTest[IMG]\\";
     public Hooks() {
         super(driver);
     }

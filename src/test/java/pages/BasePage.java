@@ -51,6 +51,9 @@ BasePage {
     public void clickElement(String locator) {
         Element(locator).click();
     }
+    public String textFromElement(String  locator) {
+        return Element(locator).getText();
+    }
 
 
 
